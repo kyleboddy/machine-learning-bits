@@ -11,7 +11,7 @@
     - No NVLink on GPU 0 (x8), GPU 1 (x16)
     - NVLink on GPU 2 (x8) + GPU 3 (x16)
   - All GPUs are at gen3 speeds, using either ROG Strix or Cirrascale Custom Riser Cables (short run)
-- **Models**: Text-web-ui, exl2 models mostly
+- **Models**: LoneStriker_miqu-1-70b-sf-4.25bpw-h6-exl2 running on text-generation-webui
 
 ---
 
