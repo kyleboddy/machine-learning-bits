@@ -12,6 +12,7 @@
     - NVLink on GPU 2 (x8) + GPU 3 (x16)
   - All GPUs are at gen3 speeds, using either ROG Strix or Cirrascale Custom Riser Cables (short run)
 - **Models**: LoneStriker_miqu-1-70b-sf-4.25bpw-h6-exl2 running on text-generation-webui
+- **Operating System**: Ubuntu Server 22.X fully updated/upgraded, Lambda Stack base + pip installs 
 
 ---
 
