@@ -1,0 +1,261 @@
+Training with Learning Rate: Model Training with Learning Rate: 5e-05
+Training with Learning Rate: 0.0001
+.5448
+Training with Learning Rate: 1e-05
+Rank 0, Epoch 1, Batch 10, Loss: 0.598224937915802
+Rank 0, Epoch 1, Batch 20, Loss: 0.5395830869674683
+Rank 0, Epoch 1, Batch 30, Loss: 0.411144882440567
+Rank 0, Epoch 1, Batch 40, Loss: 0.2051800638437271
+Rank 0, Epoch 1, Batch 50, Loss: 0.33011358976364136
+Rank 0, Epoch 1, Batch 60, Loss: 0.28444722294807434
+Rank 0, Epoch 1, Batch 70, Loss: 0.12512049078941345
+Rank 0, Epoch 1, Average Loss: 0.3692651982360248
+Rank 0, Epoch 2, Batch 10, Loss: 0.185210183262825
+Rank 0, Epoch 2, Batch 20, Loss: 0.409517765045166
+Rank 0, Epoch 2, Batch 30, Loss: 0.3067508041858673
+Rank 0, Epoch 2, Batch 40, Loss: 0.09322068840265274
+Rank 0, Epoch 2, Batch 50, Loss: 0.1992085725069046
+Rank 0, Epoch 2, Batch 60, Loss: 0.18365609645843506
+Rank 0, Epoch 2, Batch 70, Loss: 0.055611900985240936
+Rank 0, Epoch 2, Average Loss: 0.1573840359673847
+Rank 0, Epoch 3, Batch 10, Loss: 0.035757552832365036
+Rank 0, Epoch 3, Batch 20, Loss: 0.3454076647758484
+Rank 0, Epoch 3, Batch 30, Loss: 0.2029249370098114
+Rank 0, Epoch 3, Batch 40, Loss: 0.07054169476032257
+Rank 0, Epoch 3, Batch 50, Loss: 0.057311613112688065
+Rank 0, Epoch 3, Batch 60, Loss: 0.04639366269111633
+Rank 0, Epoch 3, Batch 70, Loss: 0.029003523290157318
+Rank 0, Epoch 3, Average Loss: 0.08708887127569959
+Rank 0, Epoch 4, Batch 10, Loss: 0.015249193646013737
+Rank 0, Epoch 4, Batch 20, Loss: 0.23452600836753845
+Rank 0, Epoch 4, Batch 30, Loss: 0.12353218346834183
+Rank 0, Epoch 4, Batch 40, Loss: 0.04619231075048447
+Rank 0, Epoch 4, Batch 50, Loss: 0.03277060016989708
+Rank 0, Epoch 4, Batch 60, Loss: 0.019550973549485207
+Rank 0, Epoch 4, Batch 70, Loss: 0.016794726252555847
+Rank 0, Epoch 4, Average Loss: 0.046189062073355235
+Rank 0, Epoch 5, Batch 10, Loss: 0.010661490261554718
+Rank 0, Epoch 5, Batch 20, Loss: 0.023428015410900116
+Rank 0, Epoch 5, Batch 30, Loss: 0.07318223267793655
+Rank 0, Epoch 5, Batch 40, Loss: 0.020407268777489662
+Rank 0, Epoch 5, Batch 50, Loss: 0.010370912961661816
+Rank 0, Epoch 5, Batch 60, Loss: 0.009511342272162437
+Rank 0, Epoch 5, Batch 70, Loss: 0.024257725104689598
+Rank 0, Epoch 5, Average Loss: 0.030932532982971474
+Rank 0, Epoch 6, Batch 10, Loss: 0.009093735367059708
+Rank 0, Epoch 6, Batch 20, Loss: 0.011253418400883675
+Rank 0, Epoch 6, Batch 30, Loss: 0.02225245162844658
+Rank 0, Epoch 6, Batch 40, Loss: 0.014156261458992958
+Rank 0, Epoch 6, Batch 50, Loss: 0.022097250446677208
+Rank 0, Epoch 6, Batch 60, Loss: 0.007107726763933897
+Rank 0, Epoch 6, Batch 70, Loss: 0.005938330665230751
+Rank 0, Epoch 6, Average Loss: 0.02484396123327315
+Rank 0, Epoch 7, Batch 10, Loss: 0.008889404125511646
+Rank 0, Epoch 7, Batch 20, Loss: 0.056850165128707886
+Rank 0, Epoch 7, Batch 30, Loss: 0.0946638286113739
+Rank 0, Epoch 7, Batch 40, Loss: 0.011213360354304314
+Rank 0, Epoch 7, Batch 50, Loss: 0.02040688879787922
+Rank 0, Epoch 7, Batch 60, Loss: 0.007771540433168411
+Rank 0, Epoch 7, Batch 70, Loss: 0.006243702489882708
+Rank 0, Epoch 7, Average Loss: 0.058225876088784656
+Rank 0, Epoch 8, Batch 10, Loss: 0.004694141913205385
+Rank 0, Epoch 8, Batch 20, Loss: 0.020986419171094894
+Rank 0, Epoch 8, Batch 30, Loss: 0.021480251103639603
+Rank 0, Epoch 8, Batch 40, Loss: 0.012717574834823608
+Rank 0, Epoch 8, Batch 50, Loss: 0.01072920486330986
+Rank 0, Epoch 8, Batch 60, Loss: 0.011991720646619797
+Rank 0, Epoch 8, Batch 70, Loss: 0.023899437859654427
+Rank 0, Epoch 8, Average Loss: 0.06004983683918379
+Rank 0, Epoch 9, Batch 10, Loss: 0.05044860765337944
+Rank 0, Epoch 9, Batch 20, Loss: 0.23882077634334564
+Rank 0, Epoch 9, Batch 30, Loss: 0.014174052514135838
+Rank 0, Epoch 9, Batch 40, Loss: 0.014064986258745193
+Rank 0, Epoch 9, Batch 50, Loss: 0.012624690309166908
+Rank 0, Epoch 9, Batch 60, Loss: 0.004845732823014259
+Rank 0, Epoch 9, Batch 70, Loss: 0.0035307062789797783
+Rank 0, Epoch 9, Average Loss: 0.018544312805243875
+Rank 0, Epoch 10, Batch 10, Loss: 0.0036654670257121325
+Rank 0, Epoch 10, Batch 20, Loss: 0.004341702442616224
+Rank 0, Epoch 10, Batch 30, Loss: 0.012334435246884823
+Rank 0, Epoch 10, Batch 40, Loss: 0.005815547425299883
+Rank 0, Epoch 10, Batch 50, Loss: 0.005729147233068943
+Rank 0, Epoch 10, Batch 60, Loss: 0.0032472230959683657
+Rank 0, Epoch 10, Batch 70, Loss: 0.0025323298759758472
+Rank 0, Epoch 10, Average Loss: 0.008691234520011687
+Starting model evaluation...
+Model evaluation completed.
+Post-training Evaluation Accuracy with LR=1e-05: 0.9238
+Starting model evaluation...
+Model evaluation completed.
+Pre-training Evaluation Accuracy with LR=5e-05: 0.4696
+Training with Learning Rate: 5e-05
+Rank 0, Epoch 1, Batch 10, Loss: 0.45837047696113586
+Rank 0, Epoch 1, Batch 20, Loss: 0.40504446625709534
+Rank 0, Epoch 1, Batch 30, Loss: 0.5190914869308472
+Rank 0, Epoch 1, Batch 40, Loss: 0.08288423717021942
+Rank 0, Epoch 1, Batch 50, Loss: 0.28659260272979736
+Rank 0, Epoch 1, Batch 60, Loss: 0.30940213799476624
+Rank 0, Epoch 1, Batch 70, Loss: 0.16994918882846832
+Rank 0, Epoch 1, Average Loss: 0.2898804628632114
+Rank 0, Epoch 2, Batch 10, Loss: 0.10763990134000778
+Rank 0, Epoch 2, Batch 20, Loss: 0.46891534328460693
+Rank 0, Epoch 2, Batch 30, Loss: 0.3663777709007263
+Rank 0, Epoch 2, Batch 40, Loss: 0.04181557521224022
+Rank 0, Epoch 2, Batch 50, Loss: 0.1988503634929657
+Rank 0, Epoch 2, Batch 60, Loss: 0.036007631570100784
+Rank 0, Epoch 2, Batch 70, Loss: 0.012113749980926514
+Rank 0, Epoch 2, Average Loss: 0.09957853621579235
+Rank 0, Epoch 3, Batch 10, Loss: 0.008512081578373909
+Rank 0, Epoch 3, Batch 20, Loss: 0.27404892444610596
+Rank 0, Epoch 3, Batch 30, Loss: 0.3225270211696625
+Rank 0, Epoch 3, Batch 40, Loss: 0.0058694141916930676
+Rank 0, Epoch 3, Batch 50, Loss: 0.008364791981875896
+Rank 0, Epoch 3, Batch 60, Loss: 0.012553470209240913
+Rank 0, Epoch 3, Batch 70, Loss: 0.004367389716207981
+Rank 0, Epoch 3, Average Loss: 0.06670443466982415
+Rank 0, Epoch 4, Batch 10, Loss: 0.017265651375055313
+Rank 0, Epoch 4, Batch 20, Loss: 0.13700969517230988
+Rank 0, Epoch 4, Batch 30, Loss: 0.25685134530067444
+Rank 0, Epoch 4, Batch 40, Loss: 0.0043398914858698845
+Rank 0, Epoch 4, Batch 50, Loss: 0.0038074878975749016
+Rank 0, Epoch 4, Batch 60, Loss: 0.0017258909065276384
+Rank 0, Epoch 4, Batch 70, Loss: 0.0030105412006378174
+Rank 0, Epoch 4, Average Loss: 0.03238556492938129
+Rank 0, Epoch 5, Batch 10, Loss: 0.0027926526963710785
+Rank 0, Epoch 5, Batch 20, Loss: 0.003926687408238649
+Rank 0, Epoch 5, Batch 30, Loss: 0.007750664837658405
+Rank 0, Epoch 5, Batch 40, Loss: 0.00950630847364664
+Rank 0, Epoch 5, Batch 50, Loss: 0.0029496976640075445
+Rank 0, Epoch 5, Batch 60, Loss: 0.22188927233219147
+Rank 0, Epoch 5, Batch 70, Loss: 0.002005030633881688
+Rank 0, Epoch 5, Average Loss: 0.04262724167614279
+Rank 0, Epoch 6, Batch 10, Loss: 0.003745489753782749
+Rank 0, Epoch 6, Batch 20, Loss: 0.08431234955787659
+Rank 0, Epoch 6, Batch 30, Loss: 0.0109423091635108
+Rank 0, Epoch 6, Batch 40, Loss: 0.0024218475446105003
+Rank 0, Epoch 6, Batch 50, Loss: 0.001238581957295537
+Rank 0, Epoch 6, Batch 60, Loss: 0.038667794317007065
+Rank 0, Epoch 6, Batch 70, Loss: 0.0067802853882312775
+Rank 0, Epoch 6, Average Loss: 0.02397547852575095
+Rank 0, Epoch 7, Batch 10, Loss: 0.04973972588777542
+Rank 0, Epoch 7, Batch 20, Loss: 0.007727097719907761
+Rank 0, Epoch 7, Batch 30, Loss: 0.0035927779972553253
+Rank 0, Epoch 7, Batch 40, Loss: 0.0009943273616954684
+Rank 0, Epoch 7, Batch 50, Loss: 0.020243734121322632
+Rank 0, Epoch 7, Batch 60, Loss: 0.0003055093402508646
+Rank 0, Epoch 7, Batch 70, Loss: 0.0017996600363403559
+Rank 0, Epoch 7, Average Loss: 0.013724149871231469
+Rank 0, Epoch 8, Batch 10, Loss: 0.0008119317935779691
+Rank 0, Epoch 8, Batch 20, Loss: 0.005414167884737253
+Rank 0, Epoch 8, Batch 30, Loss: 0.00910811685025692
+Rank 0, Epoch 8, Batch 40, Loss: 0.0009432298829779029
+Rank 0, Epoch 8, Batch 50, Loss: 0.0008378518978133798
+Rank 0, Epoch 8, Batch 60, Loss: 0.0007318594725802541
+Rank 0, Epoch 8, Batch 70, Loss: 0.0006886607734486461
+Rank 0, Epoch 8, Average Loss: 0.018422908210446114
+Rank 0, Epoch 9, Batch 10, Loss: 0.0058333552442491055
+Rank 0, Epoch 9, Batch 20, Loss: 0.0054004681296646595
+Rank 0, Epoch 9, Batch 30, Loss: 0.2736384868621826
+Rank 0, Epoch 9, Batch 40, Loss: 0.0008991764625534415
+Rank 0, Epoch 9, Batch 50, Loss: 0.00047914846800267696
+Rank 0, Epoch 9, Batch 60, Loss: 0.0004441596975084394
+Rank 0, Epoch 9, Batch 70, Loss: 0.0006097058649174869
+Rank 0, Epoch 9, Average Loss: 0.01793119065626377
+Rank 0, Epoch 10, Batch 10, Loss: 0.00039155359263531864
+Rank 0, Epoch 10, Batch 20, Loss: 0.00043725009891204536
+Rank 0, Epoch 10, Batch 30, Loss: 0.001178754959255457
+Rank 0, Epoch 10, Batch 40, Loss: 0.00046954472782090306
+Rank 0, Epoch 10, Batch 50, Loss: 0.00021572454716078937
+Rank 0, Epoch 10, Batch 60, Loss: 0.04496222734451294
+Rank 0, Epoch 10, Batch 70, Loss: 0.00024076105910353363
+Rank 0, Epoch 10, Average Loss: 0.013614769099402547
+Starting model evaluation...
+Model evaluation completed.
+Post-training Evaluation Accuracy with LR=5e-05: 0.921
+Starting model evaluation...
+Model evaluation completed.
+Pre-training Evaluation Accuracy with LR=0.0001: 0.4988
+Training with Learning Rate: 0.0001
+Rank 0, Epoch 1, Batch 10, Loss: 0.28279075026512146
+Rank 0, Epoch 1, Batch 20, Loss: 0.4636420011520386
+Rank 0, Epoch 1, Batch 30, Loss: 0.39043429493904114
+Rank 0, Epoch 1, Batch 40, Loss: 0.07141993939876556
+Rank 0, Epoch 1, Batch 50, Loss: 0.2231522649526596
+Rank 0, Epoch 1, Batch 60, Loss: 0.27886977791786194
+Rank 0, Epoch 1, Batch 70, Loss: 0.32255879044532776
+Rank 0, Epoch 1, Average Loss: 0.2604846410170386
+Rank 0, Epoch 2, Batch 10, Loss: 0.23300082981586456
+Rank 0, Epoch 2, Batch 20, Loss: 0.37045973539352417
+Rank 0, Epoch 2, Batch 30, Loss: 0.2813740670681
+Rank 0, Epoch 2, Batch 40, Loss: 0.02189103327691555
+Rank 0, Epoch 2, Batch 50, Loss: 0.14958953857421875
+Rank 0, Epoch 2, Batch 60, Loss: 0.03402424976229668
+Rank 0, Epoch 2, Batch 70, Loss: 0.04676642268896103
+Rank 0, Epoch 2, Average Loss: 0.11278963824616203
+Rank 0, Epoch 3, Batch 10, Loss: 0.01697019301354885
+Rank 0, Epoch 3, Batch 20, Loss: 0.031071800738573074
+Rank 0, Epoch 3, Batch 30, Loss: 0.4322739243507385
+Rank 0, Epoch 3, Batch 40, Loss: 0.02530764602124691
+Rank 0, Epoch 3, Batch 50, Loss: 0.09019728004932404
+Rank 0, Epoch 3, Batch 60, Loss: 0.009668421931564808
+Rank 0, Epoch 3, Batch 70, Loss: 0.001815182389691472
+Rank 0, Epoch 3, Average Loss: 0.07391670022212865
+Rank 0, Epoch 4, Batch 10, Loss: 0.002886694623157382
+Rank 0, Epoch 4, Batch 20, Loss: 0.008943561464548111
+Rank 0, Epoch 4, Batch 30, Loss: 0.22237037122249603
+Rank 0, Epoch 4, Batch 40, Loss: 0.023148875683546066
+Rank 0, Epoch 4, Batch 50, Loss: 0.021023832261562347
+Rank 0, Epoch 4, Batch 60, Loss: 0.005183119792491198
+Rank 0, Epoch 4, Batch 70, Loss: 0.0008619745494797826
+Rank 0, Epoch 4, Average Loss: 0.031182726635892367
+Rank 0, Epoch 5, Batch 10, Loss: 0.0023267928045243025
+Rank 0, Epoch 5, Batch 20, Loss: 0.005503819324076176
+Rank 0, Epoch 5, Batch 30, Loss: 0.002180237090215087
+Rank 0, Epoch 5, Batch 40, Loss: 0.011042768135666847
+Rank 0, Epoch 5, Batch 50, Loss: 0.004149157088249922
+Rank 0, Epoch 5, Batch 60, Loss: 0.006708243396133184
+Rank 0, Epoch 5, Batch 70, Loss: 0.00047202344285324216
+Rank 0, Epoch 5, Average Loss: 0.05147727040678581
+Rank 0, Epoch 6, Batch 10, Loss: 0.0031535036396235228
+Rank 0, Epoch 6, Batch 20, Loss: 0.5714553594589233
+Rank 0, Epoch 6, Batch 30, Loss: 0.0024538070429116488
+Rank 0, Epoch 6, Batch 40, Loss: 0.02258976735174656
+Rank 0, Epoch 6, Batch 50, Loss: 0.0025567631237208843
+Rank 0, Epoch 6, Batch 60, Loss: 0.0018636415479704738
+Rank 0, Epoch 6, Batch 70, Loss: 0.0008660367457196116
+Rank 0, Epoch 6, Average Loss: 0.033376644755628175
+Rank 0, Epoch 7, Batch 10, Loss: 0.0007942214142531157
+Rank 0, Epoch 7, Batch 20, Loss: 0.011501741595566273
+Rank 0, Epoch 7, Batch 30, Loss: 0.04616469889879227
+Rank 0, Epoch 7, Batch 40, Loss: 0.0011628291103988886
+Rank 0, Epoch 7, Batch 50, Loss: 0.0006444300524890423
+Rank 0, Epoch 7, Batch 60, Loss: 0.004218763671815395
+Rank 0, Epoch 7, Batch 70, Loss: 0.0006179526099003851
+Rank 0, Epoch 7, Average Loss: 0.017151619438111453
+Rank 0, Epoch 8, Batch 10, Loss: 0.0005833441391587257
+Rank 0, Epoch 8, Batch 20, Loss: 0.024004021659493446
+Rank 0, Epoch 8, Batch 30, Loss: 0.002236979315057397
+Rank 0, Epoch 8, Batch 40, Loss: 0.000575172423850745
+Rank 0, Epoch 8, Batch 50, Loss: 0.0027494095265865326
+Rank 0, Epoch 8, Batch 60, Loss: 0.006291541736572981
+Rank 0, Epoch 8, Batch 70, Loss: 0.05270465835928917
+Rank 0, Epoch 8, Average Loss: 0.031150870772094844
+Rank 0, Epoch 9, Batch 10, Loss: 0.004560024943202734
+Rank 0, Epoch 9, Batch 20, Loss: 0.008862325921654701
+Rank 0, Epoch 9, Batch 30, Loss: 0.13532325625419617
+Rank 0, Epoch 9, Batch 40, Loss: 0.0002569974458310753
+Rank 0, Epoch 9, Batch 50, Loss: 0.00020524310821201652
+Rank 0, Epoch 9, Batch 60, Loss: 0.0006241631926968694
+Rank 0, Epoch 9, Batch 70, Loss: 0.00013761532318312675
+Rank 0, Epoch 9, Average Loss: 0.01860739688396003
+Rank 0, Epoch 10, Batch 10, Loss: 0.00029380121850408614
+Rank 0, Epoch 10, Batch 20, Loss: 8.03436414571479e-05
+Rank 0, Epoch 10, Batch 30, Loss: 7.914409798104316e-05
+Rank 0, Epoch 10, Batch 40, Loss: 0.00010637757077347487
+Rank 0, Epoch 10, Batch 50, Loss: 0.0045299287885427475
+Rank 0, Epoch 10, Batch 60, Loss: 9.364083234686404e-05
+Rank 0, Epoch 10, Batch 70, Loss: 0.00043886658386327326
+Rank 0, Epoch 10, Average Loss: 0.0024804871363006825
+Starting model evaluation...
+Model evaluation completed.
+Post-training Evaluation Accuracy with LR=0.0001: 0.9208
