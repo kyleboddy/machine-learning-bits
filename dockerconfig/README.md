@@ -1,5 +1,7 @@
 # Deep Learning Environment for Data Science
 
+![deeplearninmidjourney](https://github.com/kyleboddy/machine-learning-bits/assets/746351/6b2b1b9b-0fd8-4119-86e3-662db49d831b)
+
 ## Summary
 
 This Dockerfile creates a robust, high-performance computing environment tailored for deep learning applications in data science, sports analytics, and research domains. Leveraging the power of NVIDIA CUDA 12.3.1, it provides a seamless experience for GPU-accelerated computing tasks. The environment is designed to support a wide range of deep learning and data processing workflows, making it ideal for analysts, sports scientists, and data scientists looking to push the boundaries of research and experimentation.
