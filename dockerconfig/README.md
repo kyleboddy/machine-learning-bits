@@ -78,7 +78,7 @@ print(result)
 
 The R script filters the data frame to include only individuals over 30 years old and calculates the average score among them.
 
-## PHP Example: Simple Data Processing and JSON Encoding
+### PHP Example: Simple Data Processing and JSON Encoding
 
 ``` php
 <?php
@@ -103,3 +103,79 @@ echo $jsonData;
 ```
 
 This PHP script creates an associative array with some data, calculates the average of the scores, and prints the data as a formatted JSON string.
+
+## Python Advanced Example Program
+
+And finally, here's a more advanced Python program to test out with an explanation to follow:
+
+``` Python
+import numpy as np
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
+from scipy.stats import pearsonr
+
+# Load the Iris dataset
+iris = load_iris()
+X = iris.data
+y = iris.target
+feature_names = iris.feature_names
+target_names = iris.target_names
+
+# Convert to Pandas DataFrame for more complex manipulations
+df = pd.DataFrame(X, columns=feature_names)
+df['target'] = y
+
+# Explore the dataset (simple example: compute Pearson correlation coefficients between features)
+for i in range(len(feature_names)):
+    for j in range(i+1, len(feature_names)):
+        corr, _ = pearsonr(df[feature_names[i]], df[feature_names[j]])
+        print(f"Pearson Correlation between {feature_names[i]} and {feature_names[j]}: {corr:.3f}")
+
+# Data Preprocessing
+## Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+## Feature Scaling
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+## Feature Extraction with PCA
+pca = PCA(n_components=2)
+X_train_pca = pca.fit_transform(X_train_scaled)
+X_test_pca = pca.transform(X_test_scaled)
+
+# Model Training
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train_pca, y_train)
+
+# Model Evaluation
+y_pred = model.predict(X_test_pca)
+print(classification_report(y_test, y_pred, target_names=target_names))
+```
+
+## Advanced Python Program Explanation
+
+### Data Loading
+The program begins by loading the Iris dataset using `Scikit-learn`. This dataset includes 150 samples of iris flowers with four features (sepal length, sepal width, petal length, petal width) and a target variable indicating the iris species.
+
+### Data Exploration
+It computes and prints the Pearson correlation coefficients between each pair of features using `SciPy`, demonstrating a simple data exploration technique.
+
+### Data Preprocessing
+- The dataset is split into training and testing sets using `train_test_split`.
+- `StandardScaler` is applied to scale features, which is crucial for many machine learning algorithms.
+- Principal Component Analysis (PCA) is used for feature extraction, reducing the dimensionality of the data while retaining most of the variance.
+
+### Model Training
+A `RandomForestClassifier` is trained on the PCA-transformed and scaled training data.
+
+### Model Evaluation
+The trained model is evaluated on the test set, and the classification report, including precision, recall, and F1-score for each class, is printed.
+
+This program covers various aspects of a typical machine learning workflow, from data loading and preprocessing to model training and evaluation, making it a solid example of using advanced data science tools in Python.
