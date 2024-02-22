@@ -27,3 +27,79 @@ This Docker environment is versatile, catering to various domains:
 
 This Dockerfile is engineered to be a cornerstone for your deep learning projects, providing a comprehensive toolkit that spans across various domains, enabling you to transform raw data into actionable insights and innovations.
 
+## Sample Programs in Python, R, and PHP for Environment Testing
+
+Below are sample programs demonstrating basic data science tasks in Python, R, and PHP. These examples are designed to test the environment setup and showcase some of the capabilities provided by the installed packages.
+
+### Python Example: Basic Data Visualization
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate some data
+x = np.arange(0., 5., 0.2)
+y = np.sin(x)
+
+# Create a simple line plot
+plt.plot(x, y, '-o', label='Sin(x)')
+plt.title('Simple Line Plot in Python')
+plt.xlabel('X axis')
+plt.ylabel('Y axis')
+plt.legend()
+
+# Save the figure
+plt.savefig('/workspace/python_plot.png')
+```
+
+This Python script generates a line plot of the sine function and saves it as 'python_plot.png' in the '/workspace' directory.
+
+### R Example: Data Manipulation with dplyr
+
+
+``` R
+library(dplyr)
+
+# Create a sample data frame
+df <- data.frame(
+  Name = c('Alice', 'Bob', 'Charlie', 'David', 'Eva'),
+  Age = c(25, 30, 35, 40, 45),
+  Score = c(85, 90, 88, 95, 80)
+)
+
+# Use dplyr to filter and summarize data
+result <- df %>%
+  filter(Age > 30) %>%
+  summarise(AverageScore = mean(Score))
+
+# Print the result
+print(result)
+```
+
+The R script filters the data frame to include only individuals over 30 years old and calculates the average score among them.
+
+## PHP Example: Simple Data Processing and JSON Encoding
+
+``` php
+<?php
+
+// Create an associative array
+$data = array(
+  "name" => "John Doe",
+  "age" => 30,
+  "scores" => array(70, 80, 90)
+);
+
+// Calculate the average score
+$averageScore = array_sum($data["scores"]) / count($data["scores"]);
+$data["averageScore"] = $averageScore;
+
+// Encode the data as a JSON string
+$jsonData = json_encode($data, JSON_PRETTY_PRINT);
+
+// Print the JSON
+echo $jsonData;
+?>
+```
+
+This PHP script creates an associative array with some data, calculates the average of the scores, and prints the data as a formatted JSON string.
