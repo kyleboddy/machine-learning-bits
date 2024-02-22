@@ -10,7 +10,7 @@ WORKDIR /workspace
 # Set MAX_JOBS environment variable for ninja/flash-attn issues
 ENV MAX_JOBS=6
 
-# Install SSH server, development tools, libraries, R, PHP, and database connectors
+# Install necessary packages
 RUN apt-get update && apt-get install -y \
     openssh-server \
     sudo \
@@ -69,20 +69,26 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Miniconda
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh \
+    && bash /tmp/miniconda.sh -b -p /opt/miniconda \
+    && rm /tmp/miniconda.sh
+
+# Add conda to PATH
+ENV PATH=/opt/miniconda/bin:${PATH}
+
+# Install ezc3d using conda
+RUN conda install -c conda-forge ezc3d
+
 # Get nvcc in PATH
 ENV PATH=/usr/local/cuda/bin:${PATH}
 
 # Install NodeJS and all of its BS
 RUN apt-get update && apt-get install -y ca-certificates curl gnupg \
-    # Download and add the NodeSource GPG key
     && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /usr/share/keyrings/nodesource.gpg \
-    # Set the Node.js major version
     && NODE_MAJOR=20 \
-    # Add the NodeSource repository
     && echo "deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" > /etc/apt/sources.list.d/nodesource.list \
-    # Update the package list with the new repository and install Node.js
     && apt-get update && apt-get install nodejs -y \
-    # Clean up
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set up SSH for remote connections
@@ -140,9 +146,6 @@ RUN R -e "install.packages(c('ggplot2', 'dplyr', 'tidyr', 'shiny', 'caret', 'ran
 
 # Reset the frontend variable to its default state
 ENV DEBIAN_FRONTEND=
-
-# Get nvcc in PATH
-ENV PATH=/usr/local/cuda/bin:${PATH}
 
 # Start the SSH service
 CMD ["/usr/sbin/sshd", "-D"]
