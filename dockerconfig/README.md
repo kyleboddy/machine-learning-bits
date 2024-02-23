@@ -156,7 +156,49 @@ This enhanced PHP script begins by creating an associative array to hold a perso
 
 The script demonstrates a simple but powerful way to visualize data in a PHP environment, particularly useful in scenarios where PHP is used for server-side data processing.
 
-## Python Advanced Example Program
+### C++ Mandelbrot Example Program
+
+``` C++
+#include <complex>
+#include <iostream>
+
+int main() {
+    const int width = 78, height = 44, numIterations = 100;
+    std::cout << "Mandelbrot Set:\n";
+    for (int i = 0; i < height; ++i) {
+        for (int j = 0; j < width; ++j) {
+            std::complex<float> point((float)j / width - 1.5, (float)i / height - 0.5);
+            std::complex<float> z(0, 0);
+            int nb_iter = 0;
+            while (abs(z) < 2 && nb_iter <= numIterations) {
+                z = z * z + point;
+                nb_iter++;
+            }
+            if (nb_iter < numIterations)
+                std::cout << '#';
+            else
+                std::cout << '.';
+        }
+        std::cout << '\n';
+    }
+    return 0;
+}
+```
+
+This C++ program generates an ASCII art representation of the Mandelbrot set. It iterates over each point in a normalized space (width x height grid), treating each point as a complex number. For each point, it iterates up to numIterations times, applying the Mandelbrot set recurrence Z_(n+1) = Z_n^2 + c (where c is the initial point of the grid and Z_0 = 0).
+
+If the magnitude of Z exceeds 2 before reaching numIterations, the point is considered part of the Mandelbrot set, and a # is printed; otherwise, a . is printed.
+
+#### Compile and Run C++ Program
+
+To compile and run this program, save it to a file, for example, mandelbrot.cpp, and then use the g++ compiler:
+
+``` sh
+g++ mandelbrot.cpp -o mandelbrot -std=c++11
+./mandelbrot
+```
+
+### Python Advanced Example Program
 
 And finally, here's a more advanced Python program to test out with an explanation to follow:
 

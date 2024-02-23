@@ -31,6 +31,9 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 # Set PATH to include Miniconda
 ENV PATH=/opt/miniconda/bin:${PATH}
 
+# Set up Conda and append conda-forge to the channels
+RUN conda config --append channels conda-forge
+
 # Install ezc3d using conda
 RUN conda install -c conda-forge ezc3d
 
@@ -60,8 +63,8 @@ RUN /opt/miniconda/bin/pip install --no-cache-dir face-recognition flash-attn
 
 # Install R and R packages using Conda, this part is painful
 RUN conda install -c r r-base \
-    && conda install -c r r-ggplot2 r-dplyr r-tidyr r-shiny r-caret r-randomForest r-rmarkdown r-keras r-tensorflow r-EBImage r-imager r-xgboost r-lightgbm r-h2o r-RMySQL r-RMariaDB
-
+    && conda install -c r r-ggplot2 r-dplyr r-tidyr r-shiny r-caret r-randomForest r-rmarkdown r-keras r-tensorflow r-imager r-xgboost r-lightgbm r-h2o r-RMySQL r-RMariaDB
+	
 # Reinforce PATH at the end for paranoia's sake
 ENV PATH=/opt/miniconda/bin:/usr/local/cuda/bin:${PATH}
 
