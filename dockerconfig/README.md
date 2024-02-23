@@ -1,10 +1,17 @@
-# Deep Learning Environment for Data Science
+# Enhanced Deep Learning Environment with Conda Management
 
-![deeplearninmidjourney](https://github.com/kyleboddy/machine-learning-bits/assets/746351/6b2b1b9b-0fd8-4119-86e3-662db49d831b)
+![deeplearningmidjourney](https://github.com/kyleboddy/machine-learning-bits/assets/746351/6b2b1b9b-0fd8-4119-86e3-662db49d831b)
 
 ## Summary
 
-This Dockerfile creates a robust, high-performance computing environment tailored for deep learning applications in data science, sports analytics, and research domains. Leveraging the power of NVIDIA CUDA 12.3.1, it provides a seamless experience for GPU-accelerated computing tasks. The environment is designed to support a wide range of deep learning and data processing workflows, making it ideal for analysts, sports scientists, and data scientists looking to push the boundaries of research and experimentation.
+This updated Dockerfile brings significant enhancements to our robust, high-performance computing environment, now featuring Conda for streamlined package management. Designed for deep learning applications in data science, sports analytics, and research domains, it builds on the NVIDIA CUDA 12.3.1 base to offer a seamless experience for GPU-accelerated tasks. The introduction of Conda enhances package installation efficiency, environment reproducibility, and isolation, making it an ideal choice for complex workflows.
+
+### Key Enhancements
+
+- **Conda Package Management**: Implements Conda for efficient management of library dependencies, significantly improving the reproducibility and isolation of environments.
+- **Unified Python and R Ecosystems**: Conda is used to manage both Python and R packages, ensuring a harmonious environment with reduced compatibility issues.
+- **Optimized Python Environment**: Python package installations are streamlined through Conda, enhancing dependency management and environment consistency.
+- **Comprehensive R Environment**: R and its packages are managed via Conda, simplifying the installation process and ensuring compatibility.
 
 ### Key Features
 
@@ -51,16 +58,16 @@ plt.ylabel('Y axis')
 plt.legend()
 
 # Save the figure
-plt.savefig('/workspace/python_plot.png')
+plt.savefig('python_plot.png')
 ```
 
 This Python script generates a line plot of the sine function and saves it as 'python_plot.png' in the '/workspace' directory.
 
 ### R Example: Data Manipulation with dplyr
 
-
 ``` R
 library(dplyr)
+library(ggplot2)
 
 # Create a sample data frame
 df <- data.frame(
@@ -76,9 +83,27 @@ result <- df %>%
 
 # Print the result
 print(result)
+
+# Generate a plot
+p <- ggplot(df, aes(x=Name, y=Score, fill=Name)) +
+  geom_bar(stat="identity") +
+  theme_minimal() +
+  labs(title="Scores by Name", y="Score")
+
+# Save the plot to a file
+ggsave("r_plot.png", plot=p)
+
+# Check if running in a Jupyter notebook and display inline if so
+if (interactive()) {
+  print(p)
+} else {
+  cat("Plot saved to r_plot.png\n")
+}
 ```
 
-The R script filters the data frame to include only individuals over 30 years old and calculates the average score among them.
+The R script begins by filtering a data frame to include only individuals over 30 years old and calculates the average score among them. Additionally, it utilizes ggplot2 to generate a bar plot visualizing the scores for each individual in the data frame. The plot is saved to r_plot.png in the current directory.
+
+If the script is executed in a Jupyter notebook, the plot will be displayed inline; otherwise, a message indicating the plot's save location is printed.
 
 ### PHP Example: Simple Data Processing and JSON Encoding
 
@@ -96,15 +121,40 @@ $data = array(
 $averageScore = array_sum($data["scores"]) / count($data["scores"]);
 $data["averageScore"] = $averageScore;
 
-// Encode the data as a JSON string
-$jsonData = json_encode($data, JSON_PRETTY_PRINT);
+// Set image dimensions and bar dimensions
+$width = 200;
+$height = 100;
+$barWidth = 20;
 
-// Print the JSON
-echo $jsonData;
-?>
+// Create the image
+$image = imagecreatetruecolor($width, $height);
+
+// Allocate colors
+$background = imagecolorallocate($image, 255, 255, 255);
+$border = imagecolorallocate($image, 0, 0, 0);
+$barColor = imagecolorallocate($image, 0, 0, 255);
+
+// Fill background and draw border
+imagefill($image, 0, 0, $background);
+imagerectangle($image, 0, 0, $width-1, $height-1, $border);
+
+// Draw bars
+foreach ($data["scores"] as $key => $value) {
+    imagefilledrectangle($image, ($key * $barWidth * 2) + 10, $height - ($value / 100 * $height), 
+        ($key * $barWidth * 2) + 10 + $barWidth, $height - 1, $barColor);
+}
+
+// Save the image to a file
+imagepng($image, "php_chart.png");
+imagedestroy($image);
+
+echo "Chart saved to php_chart.png\n";
+
 ```
 
-This PHP script creates an associative array with some data, calculates the average of the scores, and prints the data as a formatted JSON string.
+This enhanced PHP script begins by creating an associative array to hold a person's name, age, and an array of scores. It calculates the average score and adds it to the array. Then, using the php-gd library, it generates a bar chart visualizing the individual scores and saves this chart as an image (php_chart.png) in the current directory.
+
+The script demonstrates a simple but powerful way to visualize data in a PHP environment, particularly useful in scenarios where PHP is used for server-side data processing.
 
 ## Python Advanced Example Program
 
