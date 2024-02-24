@@ -28,8 +28,13 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
     && bash /tmp/miniconda.sh -b -p /opt/miniconda \
     && rm /tmp/miniconda.sh
 
-# Set PATH to include Miniconda
+# Set PATH to include Miniconda for the Dockerfile session
 ENV PATH=/opt/miniconda/bin:${PATH}
+
+# Add PATH setting for Conda and CUDA to .bashrc and .profile to set the PATH permanently
+RUN echo "export PATH=/opt/miniconda/bin:/usr/local/cuda/bin:${PATH}" >> /root/.bashrc && \
+    echo "export PATH=/opt/miniconda/bin:/usr/local/cuda/bin:${PATH}" >> /root/.profile
+
 
 # Set up Conda and append conda-forge to the channels
 RUN conda config --append channels conda-forge
